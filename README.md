@@ -6,6 +6,14 @@
 
 ---
 
+```html
+<!-- Extra components (optional - for buttons, cards, navbar, etc.) -->
+<script src="https://cdn.jsdelivr.net/gh/akoc77/peakui@v1.0.0/dist/peakui_extra.min.js"></script>
+
+<!-- Main framework (required) -->
+<script src="https://cdn.jsdelivr.net/gh/akoc77/peakui@v1.0.0/dist/peakui.min.js"></script>
+```
+
 ## Table of Contents
 
 - [What is PeakUI?](#what-is-peakui)
