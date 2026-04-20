@@ -1,6 +1,16 @@
-MIT License
+# MIT License
 
-Copyright (c) 2026 Atakan Koc
+## Copyright (c) 2026 Atakan Koc
+
+**Author:** Atakan Koc  
+**Email:** peakui@proton.me  
+**Project:** PeakUI (Just-In-Time CSS Utility Framework)  
+**Version:** 1.0.0  
+**Year:** 2026  
+
+---
+
+## Terms and Conditions
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -9,8 +19,38 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+### 1. Copyright Notice Retention
+
+The above copyright notice, this permission notice, and the following
+disclaimer shall be included in all copies or substantial portions of the
+Software.
+
+### 2. Attribution Requirement
+
+Any use of the Software in a production environment, public website, or
+distributed application must include clear attribution to PeakUI and its
+author. Acceptable forms of attribution include:
+
+- A comment in the HTML/JS source code: `/* Powered by PeakUI - https://github.com/akoc77/peakui */`
+- A mention in the application's documentation or "About" page
+- A link to the PeakUI repository in the application's footer
+
+### 3. Modification and Redistribution
+
+Modified versions of the Software must:
+
+- Clearly indicate that changes were made
+- Retain the original copyright notice
+- Not use the name "PeakUI" to endorse or promote derived products without
+  specific written permission from the copyright holder
+
+### 4. Name and Trademark
+
+The name "PeakUI" and its logo are trademarks of Atakan Koc. You may not use
+the name "PeakUI" to endorse or promote products derived from this Software
+without specific prior written permission.
+
+### 5. No Warranty and Liability Limitation
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -19,3 +59,62 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+### 6. Governing Law
+
+This license shall be governed by and construed in accordance with the laws of
+Türkiye, without regard to its conflict of law provisions.
+
+### 7. Severability
+
+If any provision of this license is found to be unenforceable or invalid, that
+provision shall be limited or eliminated to the minimum extent necessary so
+that this license shall otherwise remain in full force and effect.
+
+---
+
+## Summary for Humans
+
+| You can | You cannot | You must |
+|---------|------------|----------|
+| ✅ Use commercially | ❌ Remove copyright notice | 📝 Keep copyright notice |
+| ✅ Modify the code | ❌ Use "PeakUI" name without permission | 📝 Include license text |
+| ✅ Distribute freely | ❌ Hold author liable | 📝 Attribute the work |
+| ✅ Use in closed-source projects | ❌ Use for illegal purposes | |
+
+---
+
+## Commercial Use
+
+This license explicitly allows commercial use. You may:
+
+- Use PeakUI in proprietary, closed-source applications
+- Include PeakUI in paid products or services
+- Sell products that use PeakUI
+
+The only requirements are retaining the copyright notice and including the
+license text.
+
+---
+
+## Third-Party Components
+
+PeakUI is a standalone, zero-dependency project. It does not include or
+bundle any third-party libraries. All code is original work by the author
+unless otherwise noted in the source files.
+
+---
+
+## Contact Information
+
+For licensing inquiries, permissions, or commercial support:
+
+**Author:** Atakan Koc  
+**Email:** peakui@proton.me  
+**GitHub:** https://github.com/akoc77
+
+---
+
+*This license is based on the standard MIT License template and has been
+extended for clarity and completeness. It remains fully compatible with
+the MIT License as defined by the Open Source Initiative (OSI).*

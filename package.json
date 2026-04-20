@@ -1,0 +1,25 @@
+{
+  "name": "peakui",
+  "version": "1.0.0",
+  "description": "🚀 Zero-dependency, Just-In-Time CSS utility framework",
+  "license": "MIT",
+  "author": {
+    "name": "Atakan Koc",
+    "email": "peakui@proton.me",
+    "url": "https://github.com/akoc77"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akoc77/peakui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akoc77/peakui/issues"
+  },
+  "homepage": "https://github.com/akoc77/peakui#readme",
+  "keywords": [
+    "css-framework",
+    "utility-framework",
+    "jit-css",
+    "zero-dependency"
+  ]
+}

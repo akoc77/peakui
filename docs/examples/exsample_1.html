@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeakUI - Complete Example Showcase</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            background: #fafafa;
+        }
+        .section h2 {
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+        }
+        .demo-box {
+            padding: 20px;
+            margin: 10px 0;
+            background: white;
+            border-radius: 8px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        pre {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .grid-demo {
+            display: grid;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .grid-demo > div {
+            background: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🎨 PeakUI Complete Example Showcase</h1>
+<p>This page demonstrates almost all PeakUI features. Open browser console to see debug output.</p>
+
+<!-- ============================================================ -->
+<!-- SECTION 1: TYPOGRAPHY -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>📝 1. Typography</h2>
+    <div class="demo-box">
+        <h3>Font Sizes</h3>
+        <p class="text-xs">text-xs - Extra small text</p>
+        <p class="text-sm">text-sm - Small text</p>
+        <p class="text-base">text-base - Base text</p>
+        <p class="text-lg">text-lg - Large text</p>
+        <p class="text-xl">text-xl - Extra large</p>
+        <p class="text-2xl">text-2xl - 2XL</p>
+        <p class="text-3xl">text-3xl - 3XL</p>
+        <p class="text-4xl">text-4xl - 4XL</p>
+        <p class="text-5xl">text-5xl - 5XL</p>
+        
+        <h3 class="mt-6">Font Weights</h3>
+        <p class="font-thin">font-thin (100)</p>
+        <p class="font-light">font-light (300)</p>
+        <p class="font-normal">font-normal (400)</p>
+        <p class="font-medium">font-medium (500)</p>
+        <p class="font-semibold">font-semibold (600)</p>
+        <p class="font-bold">font-bold (700)</p>
+        <p class="font-black">font-black (900)</p>
+        
+        <h3 class="mt-6">Text Alignment</h3>
+        <p class="text-left">text-left</p>
+        <p class="text-center">text-center</p>
+        <p class="text-right">text-right</p>
+        
+        <h3 class="mt-6">Text Transform</h3>
+        <p class="uppercase">uppercase</p>
+        <p class="lowercase">LOWERCASE</p>
+        <p class="capitalize">capitalize each word</p>
+        
+        <h3 class="mt-6">Text Decoration</h3>
+        <p class="underline">underline</p>
+        <p class="overline">overline</p>
+        <p class="line-through">line-through</p>
+        <p class="underline decoration-dotted">dotted underline</p>
+        <p class="underline decoration-dashed">dashed underline</p>
+        <p class="underline decoration-wavy">wavy underline</p>
+        
+        <h3 class="mt-6">Font Families</h3>
+        <p class="font-sans">font-sans (System sans-serif)</p>
+        <p class="font-serif">font-serif (Georgia, Times)</p>
+        <p class="font-mono">font-mono (Monospace)</p>
+        
+        <h3 class="mt-6">Letter Spacing & Line Height</h3>
+        <p class="tracking-tighter">tracking-tighter - Very tight</p>
+        <p class="tracking-wide">tracking-wide - Wide spacing</p>
+        <p class="leading-none">leading-none - Line height 1</p>
+        <p class="leading-loose">leading-loose - Loose line height</p>
+        
+        <h3 class="mt-6">Truncate & Line Clamp</h3>
+        <p class="truncate w-64">This is a very long text that will be truncated with ellipsis when it overflows the container width.</p>
+        <div class="line-clamp-2 w-96">
+            This text will be clamped to exactly 2 lines. Any additional content beyond the second line will be cut off with an ellipsis. This is useful for card descriptions.
+        </div>
+        
+        <h3 class="mt-6">Text Shadows</h3>
+        <p class="text-shadow">Default text shadow</p>
+        <p class="text-shadow-lg">Large text shadow</p>
+        <p class="text-shadow-none">No text shadow</p>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 2: COLORS -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>🎨 2. Colors</h2>
+    <div class="demo-box">
+        <h3>Text Colors</h3>
+        <div class="flex gap-4 flex-wrap">
+            <span class="text-red-500">Red</span>
+            <span class="text-blue-500">Blue</span>
+            <span class="text-green-500">Green</span>
+            <span class="text-yellow-500">Yellow</span>
+            <span class="text-purple-500">Purple</span>
+            <span class="text-pink-500">Pink</span>
+            <span class="text-orange-500">Orange</span>
+            <span class="text-teal-500">Teal</span>
+            <span class="text-cyan-500">Cyan</span>
+            <span class="text-indigo-500">Indigo</span>
+            <span class="text-rose-500">Rose</span>
+            <span class="text-emerald-500">Emerald</span>
+            <span class="text-amber-500">Amber</span>
+            <span class="text-lime-500">Lime</span>
+            <span class="text-violet-500">Violet</span>
+            <span class="text-fuchsia-500">Fuchsia</span>
+            <span class="text-slate-500">Slate</span>
+            <span class="text-gray-500">Gray</span>
+            <span class="text-white bg-black">White</span>
+        </div>
+        
+        <h3 class="mt-6">Background Colors</h3>
+        <div class="flex gap-4 flex-wrap">
+            <div class="bg-red-500 p-2 rounded text-white">Red</div>
+            <div class="bg-blue-500 p-2 rounded text-white">Blue</div>
+            <div class="bg-green-500 p-2 rounded text-white">Green</div>
+            <div class="bg-yellow-500 p-2 rounded">Yellow</div>
+            <div class="bg-purple-500 p-2 rounded text-white">Purple</div>
+            <div class="bg-pink-500 p-2 rounded text-white">Pink</div>
+            <div class="bg-gray-200 p-2 rounded">Gray 200</div>
+            <div class="bg-gray-800 p-2 rounded text-white">Gray 800</div>
+        </div>
+        
+        <h3 class="mt-6">Color Shades (50-950)</h3>
+        <div class="flex gap-2 flex-wrap">
+            <div class="bg-blue-50 p-2 rounded">50</div>
+            <div class="bg-blue-100 p-2 rounded">100</div>
+            <div class="bg-blue-200 p-2 rounded">200</div>
+            <div class="bg-blue-300 p-2 rounded">300</div>
+            <div class="bg-blue-400 p-2 rounded">400</div>
+            <div class="bg-blue-500 p-2 rounded text-white">500</div>
+            <div class="bg-blue-600 p-2 rounded text-white">600</div>
+            <div class="bg-blue-700 p-2 rounded text-white">700</div>
+            <div class="bg-blue-800 p-2 rounded text-white">800</div>
+            <div class="bg-blue-900 p-2 rounded text-white">900</div>
+            <div class="bg-blue-950 p-2 rounded text-white">950</div>
+        </div>
+        
+        <h3 class="mt-6">Opacity with / Separator</h3>
+        <div class="flex gap-4 items-center">
+            <div class="bg-blue-500 p-4 rounded text-white">100%</div>
+            <div class="bg-blue-500/75 p-4 rounded text-white">75%</div>
+            <div class="bg-blue-500/50 p-4 rounded text-white">50%</div>
+            <div class="bg-blue-500/25 p-4 rounded text-white">25%</div>
+            <div class="bg-blue-500/10 p-4 rounded">10%</div>
+        </div>
+        
+        <h3 class="mt-6">Gradients</h3>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-gradient-to-r from-blue-500 to-purple-600 p-8 rounded text-white text-center">→ Right</div>
+            <div class="bg-gradient-to-b from-green-500 to-emerald-700 p-8 rounded text-white text-center">↓ Bottom</div>
+            <div class="bg-gradient-to-tr from-rose-400 to-orange-500 p-8 rounded text-white text-center">↗ Top Right</div>
+            <div class="bg-gradient-to-bl from-cyan-400 to-blue-600 p-8 rounded text-white text-center">↙ Bottom Left</div>
+        </div>
+        
+        <h3 class="mt-6">Gradient Text (bg-clip-text)</h3>
+        <h1 class="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent text-4xl">Gradient Text Effect</h1>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 3: SPACING & SIZING -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>📏 3. Spacing & Sizing</h2>
+    <div class="demo-box">
+        <h3>Margin & Padding</h3>
+        <div class="bg-gray-200 p-4">padding: 1rem (p-4)</div>
+        <div class="bg-gray-200 m-4">margin: 1rem (m-4)</div>
+        <div class="bg-gray-200 px-6 py-3">padding-x: 1.5rem, padding-y: 0.75rem</div>
+        <div class="bg-gray-200 mt-2 mb-4 ml-6 mr-2">margin top/bottom/left/right individually</div>
+        
+        <h3 class="mt-6">Gap (Flex/Grid spacing)</h3>
+        <div class="flex gap-4 flex-wrap">
+            <div class="bg-blue-500 p-2 rounded text-white">Item 1</div>
+            <div class="bg-blue-500 p-2 rounded text-white">Item 2</div>
+            <div class="bg-blue-500 p-2 rounded text-white">Item 3</div>
+        </div>
+        
+        <h3 class="mt-6">Width & Height</h3>
+        <div class="w-32 h-32 bg-red-500 rounded text-white flex items-center justify-center">w-32 h-32</div>
+        <div class="w-full bg-green-500 p-2 rounded text-white text-center mt-2">w-full (100% width)</div>
+        <div class="w-1/2 bg-purple-500 p-2 rounded text-white text-center mt-2">w-1/2 (50% width)</div>
+        
+        <h3 class="mt-6">Clamp-based Fluid Sizes</h3>
+        <div class="w-clamp-sm bg-amber-500 p-4 rounded text-white">clamp-sm width</div>
+        <div class="p-clamp-md bg-teal-500 p-4 rounded text-white mt-2">clamp-md padding</div>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 4: FLEXBOX -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>💪 4. Flexbox</h2>
+    <div class="demo-box">
+        <h3>Basic Flex</h3>
+        <div class="flex gap-2 bg-gray-100 p-4 rounded">
+            <div class="bg-blue-500 p-2 rounded text-white">Item 1</div>
+            <div class="bg-blue-500 p-2 rounded text-white">Item 2</div>
+            <div class="bg-blue-500 p-2 rounded text-white">Item 3</div>
+        </div>
+        
+        <h3 class="mt-6">Flex Direction Column</h3>
+        <div class="flex flex-col gap-2 bg-gray-100 p-4 rounded w-48">
+            <div class="bg-green-500 p-2 rounded text-white">Top</div>
+            <div class="bg-green-500 p-2 rounded text-white">Middle</div>
+            <div class="bg-green-500 p-2 rounded text-white">Bottom</div>
+        </div>
+        
+        <h3 class="mt-6">Justify Content</h3>
+        <div class="flex justify-between bg-gray-100 p-4 rounded">
+            <div class="bg-purple-500 p-2 rounded text-white">Start</div>
+            <div class="bg-purple-500 p-2 rounded text-white">End</div>
+        </div>
+        
+        <h3 class="mt-6">Align Items</h3>
+        <div class="flex items-center h-32 bg-gray-100 p-4 rounded">
+            <div class="bg-pink-500 p-2 rounded text-white">Centered vertically</div>
+        </div>
+        
+        <h3 class="mt-6">Flex Grow & Shrink</h3>
+        <div class="flex gap-2 bg-gray-100 p-4 rounded">
+            <div class="flex-1 bg-indigo-500 p-2 rounded text-white">flex-1 (grows)</div>
+            <div class="flex-none bg-indigo-500 p-2 rounded text-white">flex-none (fixed)</div>
+            <div class="flex-1 bg-indigo-500 p-2 rounded text-white">flex-1 (grows)</div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 5: GRID -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>🔲 5. Grid</h2>
+    <div class="demo-box">
+        <h3>Basic Grid - 3 Columns</h3>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-blue-500 p-4 rounded text-white text-center">1</div>
+            <div class="bg-blue-500 p-4 rounded text-white text-center">2</div>
+            <div class="bg-blue-500 p-4 rounded text-white text-center">3</div>
+            <div class="bg-blue-500 p-4 rounded text-white text-center">4</div>
+            <div class="bg-blue-500 p-4 rounded text-white text-center">5</div>
+            <div class="bg-blue-500 p-4 rounded text-white text-center">6</div>
+        </div>
+        
+        <h3 class="mt-6">Grid with Column Span</h3>
+        <div class="grid grid-cols-4 gap-4">
+            <div class="col-span-2 bg-green-500 p-4 rounded text-white text-center">col-span-2</div>
+            <div class="col-span-1 bg-green-500 p-4 rounded text-white text-center">1</div>
+            <div class="col-span-1 bg-green-500 p-4 rounded text-white text-center">1</div>
+            <div class="col-span-3 bg-purple-500 p-4 rounded text-white text-center">col-span-3</div>
+            <div class="col-span-1 bg-purple-500 p-4 rounded text-white text-center">1</div>
+        </div>
+        
+        <h3 class="mt-6">Bootstrap-style Row/Col Grid</h3>
+        <div class="row">
+            <div class="col-6 md:col-4 lg:col-3">
+                <div class="bg-amber-500 p-4 rounded text-white text-center">col-6 md:col-4 lg:col-3</div>
+            </div>
+            <div class="col-6 md:col-4 lg:col-3">
+                <div class="bg-amber-500 p-4 rounded text-white text-center">col-6 md:col-4 lg:col-3</div>
+            </div>
+            <div class="col-12 md:col-4 lg:col-3">
+                <div class="bg-amber-500 p-4 rounded text-white text-center">col-12 md:col-4 lg:col-3</div>
+            </div>
+            <div class="col-12 md:col-12 lg:col-3">
+                <div class="bg-amber-500 p-4 rounded text-white text-center">col-12 md:col-12 lg:col-3</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 6: BORDERS, SHADOWS & EFFECTS -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>✨ 6. Borders, Shadows & Effects</h2>
+    <div class="demo-box">
+        <h3>Border Radius</h3>
+        <div class="flex gap-4 flex-wrap">
+            <div class="bg-gray-800 w-20 h-20 rounded-none flex items-center justify-center text-white text-xs">none</div>
+            <div class="bg-gray-800 w-20 h-20 rounded-sm flex items-center justify-center text-white text-xs">sm</div>
+            <div class="bg-gray-800 w-20 h-20 rounded flex items-center justify-center text-white text-xs">default</div>
+            <div class="bg-gray-800 w-20 h-20 rounded-lg flex items-center justify-center text-white text-xs">lg</div>
+            <div class="bg-gray-800 w-20 h-20 rounded-xl flex items-center justify-center text-white text-xs">xl</div>
+            <div class="bg-gray-800 w-20 h-20 rounded-2xl flex items-center justify-center text-white text-xs">2xl</div>
+            <div class="bg-gray-800 w-20 h-20 rounded-full flex items-center justify-center text-white text-xs">full</div>
+        </div>
+        
+        <h3 class="mt-6">Shadows</h3>
+        <div class="flex gap-4 flex-wrap">
+            <div class="bg-white w-32 p-4 rounded text-center shadow-2xs">2xs</div>
+            <div class="bg-white w-32 p-4 rounded text-center shadow-xs">xs</div>
+            <div class="bg-white w-32 p-4 rounded text-center shadow-sm">sm</div>
+            <div class="bg-white w-32 p-4 rounded text-center shadow">default</div>
+            <div class="bg-white w-32 p-4 rounded text-center shadow-md">md</div>
+            <div class="bg-white w-32 p-4 rounded text-center shadow-lg">lg</div>
+            <div class="bg-white w-32 p-4 rounded text-center shadow-xl">xl</div>
+            <div class="bg-white w-32 p-4 rounded text-center shadow-2xl">2xl</div>
+            <div class="bg-white w-32 p-4 rounded text-center shadow-inner">inner</div>
+        </div>
+        
+        <h3 class="mt-6">Colored Shadows</h3>
+        <div class="flex gap-4 flex-wrap">
+            <div class="bg-white w-32 p-4 rounded text-center shadow-blue-500">blue</div>
+            <div class="bg-white w-32 p-4 rounded text-center shadow-red-500">red</div>
+            <div class="bg-white w-32 p-4 rounded text-center shadow-green-500">green</div>
+            <div class="bg-white w-32 p-4 rounded text-center shadow-purple-500">purple</div>
+        </div>
+        
+        <h3 class="mt-6">Borders</h3>
+        <div class="flex gap-4 flex-wrap">
+            <div class="border border-solid border-color-gray-400 p-4 rounded">solid border</div>
+            <div class="border-2 border-dashed border-color-blue-500 p-4 rounded">dashed 2px</div>
+            <div class="border-t-4 border-solid border-color-t-red-500 p-4 rounded">top border only</div>
+        </div>
+        
+        <h3 class="mt-6">Rings (Focus Rings)</h3>
+        <button class="ring-blue-500 focus:ring p-2 rounded">Focus me (tab to see ring)</button>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 7: POSITIONING & DISPLAY -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>📍 7. Positioning & Display</h2>
+    <div class="demo-box">
+        <h3>Display Utilities</h3>
+        <div class="flex gap-2 flex-wrap">
+            <div class="block bg-blue-500 p-2 rounded text-white">block</div>
+            <div class="inline-block bg-green-500 p-2 rounded text-white">inline-block</div>
+            <div class="inline bg-purple-500 p-2 rounded text-white">inline</div>
+            <div class="hidden bg-red-500 p-2 rounded text-white">hidden (you can't see me)</div>
+        </div>
+        
+        <h3 class="mt-6">Position Relative + Absolute</h3>
+        <div class="relative bg-gray-200 h-40 p-4 rounded">
+            <div class="absolute top-2 right-2 bg-blue-500 p-2 rounded text-white">absolute top-2 right-2</div>
+            <div class="absolute bottom-2 left-2 bg-green-500 p-2 rounded text-white">absolute bottom-2 left-2</div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-purple-500 p-2 rounded text-white">centered</div>
+        </div>
+        
+        <h3 class="mt-6">Visibility</h3>
+        <div class="visible bg-amber-500 p-2 rounded text-white inline-block">visible</div>
+        <div class="invisible bg-amber-500 p-2 rounded text-white inline-block">invisible (hidden but takes space)</div>
+        <div class="collapse bg-amber-500 p-2 rounded text-white inline-block">collapse</div>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 8: FILTERS & BACKDROP -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>🎯 8. Filters & Backdrop Filters</h2>
+    <div class="demo-box">
+        <h3>CSS Filters</h3>
+        <div class="flex gap-4 flex-wrap">
+            <img src="https://picsum.photos/100/100?random=1" class="w-20 h-20 rounded" alt="original">
+            <img src="https://picsum.photos/100/100?random=1" class="w-20 h-20 rounded blur-4" alt="blur">
+            <img src="https://picsum.photos/100/100?random=1" class="w-20 h-20 rounded grayscale-100" alt="grayscale">
+            <img src="https://picsum.photos/100/100?random=1" class="w-20 h-20 rounded sepia-100" alt="sepia">
+            <img src="https://picsum.photos/100/100?random=1" class="w-20 h-20 rounded brightness-150" alt="brightness">
+            <img src="https://picsum.photos/100/100?random=1" class="w-20 h-20 rounded contrast-200" alt="contrast">
+            <img src="https://picsum.photos/100/100?random=1" class="w-20 h-20 rounded saturate-200" alt="saturate">
+        </div>
+        
+        <h3 class="mt-6">Backdrop Filters (Frosted Glass Effect)</h3>
+        <div class="relative h-40 rounded overflow-hidden">
+            <img src="https://picsum.photos/600/200?random=2" class="w-full h-full object-cover" alt="background">
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="backdrop-blur-8 backdrop-brightness-75 bg-white/20 p-6 rounded-xl text-white text-center">
+                    Frosted Glass Effect<br>
+                    backdrop-blur + backdrop-brightness
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 9: TRANSITIONS & ANIMATIONS -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>🎬 9. Transitions & Animations</h2>
+    <div class="demo-box">
+        <h3>Hover Transitions</h3>
+        <button class="bg-blue-500 text-white px-6 py-3 rounded transition hover:bg-blue-700 hover:scale-105 hover:shadow-lg">
+            Hover me - smooth transition
+        </button>
+        
+        <h3 class="mt-6">Different Transition Properties</h3>
+        <div class="flex gap-4 flex-wrap">
+            <button class="bg-green-500 text-white px-4 py-2 rounded transition-colors duration-300 hover:bg-green-700">colors only</button>
+            <button class="bg-purple-500 text-white px-4 py-2 rounded transition-transform duration-300 hover:scale-10">transform only</button>
+            <button class="bg-amber-500 text-white px-4 py-2 rounded transition-all duration-500 hover:bg-amber-700 hover:scale-15 hover:shadow-lg">all properties</button>
+        </div>
+        
+        <h3 class="mt-6">Easing Functions</h3>
+        <div class="flex gap-4 flex-wrap">
+            <button class="bg-red-500 text-white px-4 py-2 rounded transition ease-linear hover:translate-x-4">linear</button>
+            <button class="bg-red-500 text-white px-4 py-2 rounded transition ease-in hover:translate-x-4">ease-in</button>
+            <button class="bg-red-500 text-white px-4 py-2 rounded transition ease-out hover:translate-x-4">ease-out</button>
+            <button class="bg-red-500 text-white px-4 py-2 rounded transition ease-in-out hover:translate-x-4">ease-in-out</button>
+            <button class="bg-red-500 text-white px-4 py-2 rounded transition ease-back hover:translate-x-4">ease-back (overshoot)</button>
+        </div>
+        
+        <h3 class="mt-6">Animations</h3>
+        <div class="flex gap-8 items-center">
+            <div class="animate-spin w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full"></div>
+            <div class="animate-pulse bg-green-500 w-12 h-12 rounded-full"></div>
+            <div class="animate-bounce bg-purple-500 w-12 h-12 rounded-full"></div>
+            <div class="relative">
+                <div class="animate-ping absolute w-12 h-12 bg-red-500 rounded-full opacity-75"></div>
+                <div class="relative w-12 h-12 bg-red-500 rounded-full"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 10: OPACITY, TRANSFORMS & SCALE -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>🔄 10. Opacity, Transforms & Scale</h2>
+    <div class="demo-box">
+        <h3>Opacity</h3>
+        <div class="flex gap-4">
+            <div class="bg-blue-500 w-16 h-16 rounded opacity-100"></div>
+            <div class="bg-blue-500 w-16 h-16 rounded opacity-75"></div>
+            <div class="bg-blue-500 w-16 h-16 rounded opacity-50"></div>
+            <div class="bg-blue-500 w-16 h-16 rounded opacity-25"></div>
+            <div class="bg-blue-500 w-16 h-16 rounded opacity-10"></div>
+            <div class="bg-blue-500 w-16 h-16 rounded opacity-0"></div>
+        </div>
+        
+        <h3 class="mt-6">Transform: Translate & Rotate</h3>
+        <div class="flex gap-8 items-center">
+            <div class="bg-green-500 w-20 h-20 rounded flex items-center justify-center text-white text-xs">original</div>
+            <div class="bg-green-500 w-20 h-20 rounded flex items-center justify-center text-white text-xs translate-x-10">translate-x-10</div>
+            <div class="bg-green-500 w-20 h-20 rounded flex items-center justify-center text-white text-xs rotate-45">rotate-45</div>
+            <div class="bg-green-500 w-20 h-20 rounded flex items-center justify-center text-white text-xs -rotate-12">-rotate-12</div>
+        </div>
+        
+        <h3 class="mt-6">Scale</h3>
+        <div class="flex gap-8 items-center">
+            <div class="bg-purple-500 w-16 h-16 rounded flex items-center justify-center text-white text-xs">100%</div>
+            <div class="bg-purple-500 w-16 h-16 rounded flex items-center justify-center text-white text-xs scale-75">75%</div>
+            <div class="bg-purple-500 w-16 h-16 rounded flex items-center justify-center text-white text-xs scale-125">125%</div>
+            <div class="bg-purple-500 w-16 h-16 rounded flex items-center justify-center text-white text-xs scale-150">150%</div>
+        </div>
+        
+        <h3 class="mt-6">Hover Transforms</h3>
+        <div class="flex gap-4">
+            <button class="bg-indigo-500 text-white px-6 py-3 rounded transition hover:scale-10 hover:rotate-3">Hover to scale + rotate</button>
+            <button class="bg-indigo-500 text-white px-6 py-3 rounded transition hover:translate-x-4 hover:-translate-y-2">Hover to move</button>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 11: RESPONSIVE DESIGN -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>📱 11. Responsive Design</h2>
+    <div class="demo-box">
+        <p class="text-sm md:text-lg xl:text-2xl font-semibold text-center">
+            This text changes size at different breakpoints:<br>
+            <span class="text-xs">xs: small</span> → 
+            <span class="md:inline hidden">md: medium</span> → 
+            <span class="lg:inline hidden">lg: large</span> → 
+            <span class="xl:inline hidden">xl: extra large</span>
+        </p>
+        
+        <h3 class="mt-6">Responsive Flex Layout</h3>
+        <div class="flex flex-col md:flex-row gap-4">
+            <div class="bg-blue-500 p-4 rounded text-white text-center flex-1">Stack on mobile<br>Side by side on tablet+</div>
+            <div class="bg-green-500 p-4 rounded text-white text-center flex-1">Stack on mobile<br>Side by side on tablet+</div>
+            <div class="bg-purple-500 p-4 rounded text-white text-center flex-1">Stack on mobile<br>Side by side on tablet+</div>
+        </div>
+        
+        <h3 class="mt-6">Responsive Grid</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-amber-500 p-4 rounded text-white text-center">1 col on mobile<br>2 cols on tablet<br>4 cols on desktop</div>
+            <div class="bg-amber-500 p-4 rounded text-white text-center">Item 2</div>
+            <div class="bg-amber-500 p-4 rounded text-white text-center">Item 3</div>
+            <div class="bg-amber-500 p-4 rounded text-white text-center">Item 4</div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 12: ACCESSIBILITY -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>♿ 12. Accessibility</h2>
+    <div class="demo-box">
+        <h3>Screen Reader Only</h3>
+        <p>
+            <span class="sr-only">This text is only visible to screen readers</span>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded">Save Changes</button>
+        </p>
+        
+        <h3 class="mt-6">Focus Visible (Keyboard Navigation)</h3>
+        <button class="focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none bg-gray-200 px-4 py-2 rounded">
+            Tab to me - see focus ring
+        </button>
+        <button class="focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:outline-none bg-gray-200 px-4 py-2 rounded ml-2">
+            Also tab to me
+        </button>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 13: INTERACTIVE COMPONENTS -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>🧩 13. Interactive Components</h2>
+    <div class="demo-box">
+        <h3>Card Example</h3>
+        <div class="card-blue max-w-sm">
+            <div class="image">
+                <img src="https://picsum.photos/400/200?random=3" alt="Card image" class="w-full h-48 object-cover">
+            </div>
+            <div class="content">
+                <span class="header">PeakUI Framework</span>
+                <span class="meta">Version 1.0.0 - April 2026</span>
+                <p class="description">A zero-dependency, Just-In-Time CSS utility framework. No build step required.</p>
+            </div>
+            <div class="extra">
+                <span>🚀 1,000+ downloads</span>
+                <span class="right floated">⭐ 5.0 rating</span>
+            </div>
+        </div>
+        
+        <h3 class="mt-6">Button Variants</h3>
+        <div class="flex gap-4 flex-wrap">
+            <button class="btn-blue">Primary Button</button>
+            <button class="btn-green">Success Button</button>
+            <button class="btn-red">Danger Button</button>
+            <button class="btn-amber">Warning Button</button>
+            <button class="btn-gray">Secondary Button</button>
+        </div>
+        
+        <h3 class="mt-6">Badges</h3>
+        <div class="flex gap-2">
+            <span class="badge-blue">New</span>
+            <span class="badge-green">Active</span>
+            <span class="badge-red">Beta</span>
+            <span class="badge-amber">Warning</span>
+            <span class="badge-gray">Archived</span>
+        </div>
+        
+        <h3 class="mt-6">Alerts</h3>
+        <div class="alert-blue mb-2">ℹ️ This is an informational message</div>
+        <div class="alert-green mb-2">✅ Success! Your changes have been saved</div>
+        <div class="alert-red mb-2">❌ Error! Something went wrong</div>
+        <div class="alert-amber">⚠️ Warning! Your session will expire soon</div>
+        
+        <h3 class="mt-6">Input Fields</h3>
+        <div class="space-y-4">
+            <input type="text" class="input-blue w-full" placeholder="Blue themed input">
+            <input type="email" class="input-green w-full" placeholder="Green themed input">
+            <textarea class="input-purple w-full" rows="3" placeholder="Textarea with purple theme"></textarea>
+        </div>
+        
+        <h3 class="mt-6">Toggle Switch</h3>
+        <div class="flex gap-8">
+            <label class="switch-blue">
+                <input type="checkbox">
+                <div class="slider"></div>
+                <span>Dark mode</span>
+            </label>
+            <label class="switch-green">
+                <input type="checkbox" checked>
+                <div class="slider"></div>
+                <span>Notifications</span>
+            </label>
+        </div>
+        
+        <h3 class="mt-6">Dropdown Example</h3>
+        <div class="dropdown-blue inline-block">
+            <button class="dd-toggle bg-blue-500 text-white px-4 py-2 rounded">Click me ▼</button>
+            <div class="dd-menu">
+                <a href="#" class="dd-item">Profile</a>
+                <a href="#" class="dd-item">Settings</a>
+                <div class="dd-divider"></div>
+                <a href="#" class="dd-item">Logout</a>
+            </div>
+        </div>
+        
+        <h3 class="mt-6">Accordion Example</h3>
+        <div class="accordion-blue max-w-md">
+            <div class="acc-item">
+                <input type="checkbox" class="acc-trigger" id="accordion1">
+                <label class="acc-header" for="accordion1">What is PeakUI?</label>
+                <div class="acc-content">
+                    <div class="acc-inner">
+                        PeakUI is a Just-In-Time CSS utility framework that runs entirely in the browser. No build step required!
+                    </div>
+                </div>
+            </div>
+            <div class="acc-item">
+                <input type="checkbox" class="acc-trigger" id="accordion2">
+                <label class="acc-header" for="accordion2">How do I install?</label>
+                <div class="acc-content">
+                    <div class="acc-inner">
+                        Just add <code>&lt;script src="peakui.js"&gt;&lt;/script&gt;</code> to your HTML. That's it!
+                    </div>
+                </div>
+            </div>
+            <div class="acc-item">
+                <input type="checkbox" class="acc-trigger" id="accordion3">
+                <label class="acc-header" for="accordion3">Is it free?</label>
+                <div class="acc-content">
+                    <div class="acc-inner">
+                        Yes! PeakUI is MIT licensed and completely free to use.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 14: DARK MODE -->
+<!-- ============================================================ -->
+
+<div class="section dark-mode-demo bg-white dark:bg-gray-900 transition-colors">
+    <h2>🌙 14. Dark Mode</h2>
+    <div class="demo-box bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+        <p>This section demonstrates dark mode support. Click the button below to toggle:</p>
+        <button id="darkModeToggle" class="bg-blue-500 text-white px-4 py-2 rounded mt-2">
+            Toggle Dark Mode
+        </button>
+        <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">
+            Current theme: <span id="themeStatus">light</span>
+        </p>
+        <div class="mt-4 p-4 bg-gray-100 dark:bg-gray-700 rounded">
+            This box changes color in dark mode!
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 15: UTILITY MIX -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>🎯 15. Utility Mix - Real World Example</h2>
+    <div class="demo-box">
+        <div class="flex flex-col md:flex-row gap-6 p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-lg">
+            <div class="flex-1">
+                <div class="w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto shadow-lg">
+                    <span class="text-white text-4xl">🚀</span>
+                </div>
+                <h3 class="text-xl font-bold text-center mt-4 text-gray-800 dark:text-white">PeakUI</h3>
+                <p class="text-center text-gray-600 dark:text-gray-300 mt-2">JIT CSS Framework</p>
+                <div class="flex justify-center gap-2 mt-4">
+                    <span class="badge-blue">v1.0</span>
+                    <span class="badge-green">MIT</span>
+                </div>
+            </div>
+            <div class="flex-1 space-y-4">
+                <div class="flex items-center gap-3 p-3 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
+                    <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white">✓</div>
+                    <div>
+                        <p class="font-semibold text-gray-800 dark:text-white">Zero Dependencies</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">No npm, no build tools</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 p-3 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
+                    <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white">⚡</div>
+                    <div>
+                        <p class="font-semibold text-gray-800 dark:text-white">Just-In-Time</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">CSS generated on demand</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 p-3 bg-white dark:bg-gray-700 rounded-lg shadow-sm">
+                    <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white">🎨</div>
+                    <div>
+                        <p class="font-semibold text-gray-800 dark:text-white">OKLCH Colors</p>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Perceptually uniform palettes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 flex items-center justify-center">
+                <button class="btn-blue w-full text-center">
+                    Get Started →
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 16: PERFORMANCE INFO -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>⚡ 16. Performance</h2>
+    <div class="demo-box">
+        <p>PeakUI generates CSS on-demand. Open your browser console to see:</p>
+        <ul class="list-disc ml-6 mt-2">
+            <li>Initialization time (<code>PeakUI-JS-Time</code>)</li>
+            <li>Number of rules added</li>
+            <li>Total CSS size in KB</li>
+            <li>Total render time (<code>🔥 (JS + CSS + Render)</code>)</li>
+        </ul>
+        <button id="perfTest" class="bg-blue-500 text-white px-4 py-2 rounded mt-4">
+            Add Dynamic Element (triggers observer)
+        </button>
+        <div id="dynamicContainer" class="mt-4"></div>
+    </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 17: ARBITRARY VALUES -->
+<!-- ============================================================ -->
+
+<div class="section">
+    <h2>📝 17. Arbitrary Values</h2>
+    <div class="demo-box">
+        <p>PeakUI supports arbitrary values using square bracket syntax:</p>
+        <div class="w-[250px] h-[100px] bg-[#ff6b6b] rounded-lg flex items-center justify-center text-white mb-2">
+            w-[250px] h-[100px] bg-[#ff6b6b]
+        </div>
+        <div class="p-[1.25rem] bg-[oklch(65% 0.18 210)] rounded-lg text-white">
+            p-[1.25rem] bg-[oklch(65% 0.18 210)]
+        </div>
+    </div>
+</div>
+
+<script src="../../src/peakui.js"></script>
+<script src="../../src/peakui_extra.js"></script>
+
+<script>
+    // Dark mode toggle functionality
+    const toggleBtn = document.getElementById('darkModeToggle');
+    const themeStatus = document.getElementById('themeStatus');
+    
+    function updateThemeStatus() {
+        const isDark = document.documentElement.classList.contains('dark');
+        themeStatus.textContent = isDark ? 'dark' : 'light';
+    }
+    
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+            const html = document.documentElement;
+            const isDark = html.classList.contains('dark');
+            
+            if (isDark) {
+                html.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+            updateThemeStatus();
+        });
+    }
+    updateThemeStatus();
+    
+    // Performance test - add dynamic element
+    const perfBtn = document.getElementById('perfTest');
+    const dynamicContainer = document.getElementById('dynamicContainer');
+    let counter = 0;
+    
+    if (perfBtn) {
+        perfBtn.addEventListener('click', () => {
+            counter++;
+            const newDiv = document.createElement('div');
+            newDiv.className = 'bg-gradient-to-r from-purple-500 to-pink-500 p-4 rounded-lg text-white text-center mt-2 animate-pulse';
+            newDiv.textContent = `Dynamic element #${counter} - added at ${new Date().toLocaleTimeString()}`;
+            dynamicContainer.appendChild(newDiv);
+        });
+    }
+    
+    // Log PeakUI info
+    if (window.peak) {
+        console.log('✅ PeakUI loaded successfully!');
+        console.log('Debug mode:', window.peak.debug);
+    } else {
+        setTimeout(() => {
+            if (window.peak) {
+                console.log('✅ PeakUI loaded successfully!');
+                console.log('Debug mode:', window.peak.debug);
+            }
+        }, 100);
+    }
+</script>
+
+</body>
+</html>
